@@ -2,11 +2,11 @@ Component,Qty,Price_USD,Link,Phase
 Grove EMG Detector,4,120,https://www.seeedstudio.com/Grove-EMG-Detector-p-1737.html,1
 ESP32-S3-DevKitC-1-N8R8,1,20,https://www.amazon.com/dp/B09MHP42LY,1
 Grove male jumper cables (5-pack),1,2,https://www.seeedstudio.com/Grove-4-pin-Male-Jumper-to-Grove-4-pin-Conversion-Cable-5-PCs-per-Pack.html,1
-USB-C cable,1,5,,1
-Breadboard,1,5,,1
-Jumper wires,1,3,,1
-Over-ear headphones,1,20,,2
-LiPo 3.7V 500-1000 mAh,1,8,,2
-LiPo charger (TP4056),1,7,,2
-Snap electrodes (50-pack),1,22,,2
-Foam pads + velcro,1,12,,2
+USB-C cable,1,5,https://www.amazon.com/dp/B085LL8DLG,1
+Breadboard,1,5,https://www.amazon.com/dp/B0722ZJDDK,1
+Jumper wires,1,3,https://www.amazon.com/dp/B07SDJ2NBY,1
+Over-ear headphones,1,20,https://www.amazon.com/dp/B092DT8CB7,2
+LiPo 3.7V 500-1000 mAh,1,8,https://www.amazon.com/dp/B07CXSKJFK,2
+LiPo charger (TP4056),1,7,https://www.amazon.com/dp/B07P7WSKXR,2
+Snap electrodes (50-pack),1,22,https://www.amazon.com/dp/B091F4HWRK,2
+Foam pads + velcro,1,12,https://www.amazon.com/dp/B09SGDCNCJ,2

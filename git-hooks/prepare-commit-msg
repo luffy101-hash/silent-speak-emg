@@ -1,0 +1,11 @@
+#!/bin/bash
+# Strip Cursor co-author lines added by IDE hooks.
+if [ -f "$1" ]; then
+  if sed --version >/dev/null 2>&1; then
+    sed -i '/cursoragent@cursor\.com/d' "$1"
+    sed -i '/Co-authored-by: Cursor/d' "$1"
+  else
+    sed -i '' '/cursoragent@cursor\.com/d' "$1"
+    sed -i '' '/Co-authored-by: Cursor/d' "$1"
+  fi
+fi
