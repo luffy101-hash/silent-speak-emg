@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SilentSpeak — silent-speech interface using multichannel surface EMG in over-ear headphones." />
+  <title>SilentSpeak · Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Hack Club Outpost · Stardance</p>
+      <h1>SilentSpeak</h1>
+      <p class="tagline">
+        Mouth a command without sound. Four jaw-muscle EMG channels classify it into
+        one of <strong>10 commands</strong> — then speak it aloud.
+      </p>
+      <div class="hero-links">
+        <a class="btn primary" href="https://github.com/luffy101-hash/silent-speak-emg" target="_blank" rel="noopener">View source</a>
+        <a class="btn ghost" href="wiring.md">Wiring docs</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel demo-panel" aria-labelledby="demo-title">
+      <div class="panel-head">
+        <h2 id="demo-title">Interactive demo</h2>
+        <p>Simulated 4-channel EMG + classifier. Click a command to see detection and TTS.</p>
+      </div>
+
+      <div class="demo-grid">
+        <div class="scope-card">
+          <div class="scope-header">
+            <span class="live-dot" aria-hidden="true"></span>
+            <span>Live EMG · 1000 Hz</span>
+            <span class="scope-meta" id="scope-status">idle</span>
+          </div>
+          <canvas id="emg-canvas" width="640" height="220" aria-label="Simulated four-channel EMG waveform"></canvas>
+          <div class="channel-legend">
+            <span data-ch="0">ch0 masseter L</span>
+            <span data-ch="1">ch1 temporalis L</span>
+            <span data-ch="2">ch2 masseter R</span>
+            <span data-ch="3">ch3 temporalis R</span>
+          </div>
+        </div>
+
+        <div class="classifier-card">
+          <p class="label">Mouth a command (simulated)</p>
+          <div class="command-grid" id="command-grid" role="group" aria-label="Silent commands"></div>
+
+          <div class="result-block" id="result-block" hidden>
+            <p class="label">Classifier output</p>
+            <div class="prediction">
+              <span class="prediction-word" id="prediction-word">—</span>
+              <span class="prediction-conf" id="prediction-conf">0%</span>
+            </div>
+            <div class="confidence-bar" aria-hidden="true">
+              <div class="confidence-fill" id="confidence-fill"></div>
+            </div>
+            <button type="button" class="btn primary full" id="speak-btn">Speak command</button>
+          </div>
+
+          <p class="hint" id="demo-hint">Pick a command above. In hardware mode, the ESP32 streams real EMG over USB or Wi‑Fi.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel info-panel">
+      <h2>How it works</h2>
+      <ol class="pipeline">
+        <li><strong>Sense</strong> — 4× Grove EMG in headphone earmuffs (masseter + temporalis)</li>
+        <li><strong>Stream</strong> — ESP32-S3 at 1000 Hz → <code>timestamp_ms,ch0,ch1,ch2,ch3</code></li>
+        <li><strong>Filter</strong> — 20–450 Hz Butterworth bandpass, 3 s windows</li>
+        <li><strong>Classify</strong> — 1D CNN → 10 silent commands</li>
+        <li><strong>Output</strong> — Companion app + text-to-speech</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>MIT · <a href="https://github.com/luffy101-hash/silent-speak-emg">silent-speak-emg</a></p>
+  </footer>
+
+  <script src="assets/demo.js"></script>
+</body>
+</html>

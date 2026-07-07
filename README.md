@@ -2,6 +2,8 @@
 
 > Silent-speech interface using multichannel surface EMG in over-ear headphones.
 
+**Demo:** [luffy101-hash.github.io/silent-speak-emg](https://luffy101-hash.github.io/silent-speak-emg/) — interactive EMG simulator + command classifier
+
 **This project is funded by [Hack Club Outpost](https://outpost.hackclub.com) / [Stardance](https://stardance.hackclub.com).**
 
 ## What is this?
@@ -54,6 +56,14 @@ Download [BOM.csv](BOM.csv). Columns: Component, Qty, Price_USD, Link, Phase.
 See [docs/wiring.md](docs/wiring.md) for Grove pinout and bench-test setup.
 
 ## Quick start
+
+### Demo site (GitHub Pages)
+
+Static demo lives in [`docs/`](docs/). Enable once in the repo:
+
+**Settings → Pages → Build from branch `main` → folder `/docs`**
+
+Live URL: `https://luffy101-hash.github.io/silent-speak-emg/`
 
 ### Firmware
 
