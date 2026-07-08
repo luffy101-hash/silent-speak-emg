@@ -1,4 +1,4 @@
-"""SilentSpeak companion app: command display + TTS."""
+"""SpeakEMG companion app: command display + TTS."""
 
 import sys
 from pathlib import Path
@@ -10,9 +10,9 @@ sys.path.insert(0, str(ROOT / "python"))
 
 from config import COMMANDS, MODEL_DIR  # noqa: E402
 
-st.set_page_config(page_title="SilentSpeak", page_icon="🎧", layout="centered")
+st.set_page_config(page_title="SpeakEMG", page_icon="🎧", layout="centered")
 
-st.title("SilentSpeak")
+st.title("SpeakEMG")
 st.caption("Silent-speech EMG interface")
 
 st.markdown(
@@ -31,7 +31,7 @@ with col1:
 
 with col2:
     st.subheader("Status")
-    model_path = MODEL_DIR / "silentspeak.pt"
+    model_path = MODEL_DIR / "speahemg.pt"
     if model_path.exists():
         st.success("Model found")
     else:

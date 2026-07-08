@@ -60,7 +60,7 @@ def run_inference(port: str, model_path: str, baud: int = 115200) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Live EMG command inference")
     parser.add_argument("--port", required=True)
-    parser.add_argument("--model", default=str(MODEL_DIR / "silentspeak.pt"))
+    parser.add_argument("--model", default=str(MODEL_DIR / "speahemg.pt"))
     args = parser.parse_args()
 
     try:

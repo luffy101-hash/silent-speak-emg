@@ -1,5 +1,5 @@
 /*
- * SilentSpeak: 4-channel Grove EMG streamer for ESP32-S3
+ * SpeakEMG: 4-channel Grove EMG streamer for ESP32-S3
  *
  * Samples 4 analog channels at SAMPLE_RATE_HZ and outputs CSV:
  *   timestamp_ms,ch0,ch1,ch2,ch3
@@ -98,7 +98,7 @@ void setup() {
   Serial.println("# wifi_connected");
 #endif
 
-  Serial.println("# silentspeak_emg_v1");
+  Serial.println("# speahemg_v1");
   Serial.println("# format: timestamp_ms,ch0,ch1,ch2,ch3");
 }
 

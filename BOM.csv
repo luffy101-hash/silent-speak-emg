@@ -1,13 +1,13 @@
 Component,Qty,Price_USD,Link,Phase
-Grove EMG Detector,4,120,https://www.seeedstudio.com/Grove-EMG-Detector-p-1737.html,1
-ESP32-S3-DevKitC-1-N8R8,1,15,https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-DEVKITC-1-N8R8/15295894,1
+Grove EMG Detector,4,112,https://www.seeedstudio.com/Grove-EMG-Detector-p-1737.html,1
+ESP32-S3-DevKitC-1-N16R8,1,13,https://www.amazon.com/gp/product/B0FPLVCTQD/ref=ox_sc_act_title_3?smid=A3EUM5QJ0XFZ3D&psc=1,1
 Grove male jumper cables (5-pack),1,2,https://www.seeedstudio.com/Grove-4-pin-Male-Jumper-to-Grove-4-pin-Conversion-Cable-5-PCs-per-Pack.html,1
 USB-C cable,1,7,https://www.sparkfun.com/products/15092,1
 Breadboard,1,8,https://www.sparkfun.com/breadboard-full-size-bare.html,1
-Jumper wires (20-pack),1,3,https://www.sparkfun.com/jumper-wires-connected-6-m-m-20-pack.html,1
-Over-ear headphones,1,49,https://www.bhphotovideo.com/c/product/1024219-REG/audio_technica_ath_m20x_closed_back_professional_studio.html,2
+Jumper wires (40-pack),1,4,https://www.amazon.com/gp/product/B0BRTJQZRD/ref=ox_sc_act_title_2?smid=A2XLLJ8HYD6SMA&psc=1,1
+Over-ear headphones,1,23,https://www.amazon.com/gp/product/B0CFGVDDH6/ref=ox_sc_act_title_1?smid=A148YQ9DI89PLZ&psc=1,2
 LiPo 3.7V 500mAh,1,8,https://www.adafruit.com/product/1578,2
 LiPo charger (USB-C),1,6,https://www.adafruit.com/product/4410,2
-Snap electrodes (50-pack),1,25,https://shop.openbci.com/products/kendall-emg-ecg-foam-solid-gel-electrodes-50-pack,2
-Adhesive foam mounting squares,1,9,https://www.homedepot.com/p/3M-1-in-x-1-in-2-54-cm-x-2-54-cm-Clear-Double-Sided-Mounting-Tape-Squares-410-SQ-VP/309585636,2
+Snap electrodes (10-pack),2,20,https://www.amazon.com/gp/product/B01BLY2FK6/ref=ox_sc_act_title_5?smid=A49XZSPG2WVN&psc=1,2
+Adhesive foam mounting squares,1,6,https://www.amazon.com/gp/product/B0CZL272TN/ref=ox_sc_act_title_4?smid=A33G03RGL0O2XH&psc=1,2
 Velcro cinch straps (1 in),1,11,https://www.homedepot.com/p/VELCRO-Eco-Wrap-EM-10-ft-x-1-in-Straps-in-Black-VEL-30188-USA/316765659,2

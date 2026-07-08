@@ -1,22 +1,14 @@
-# SilentSpeak
+# SpeakEMG
 
 > Silent-speech interface using multichannel surface EMG in over-ear headphones.
 
-**Demo:** [luffy101-hash.github.io/silent-speak-emg](https://luffy101-hash.github.io/silent-speak-emg/) — interactive EMG simulator + command classifier
-
-**This project is funded by [Hack Club Outpost](https://outpost.hackclub.com) / [Stardance](https://stardance.hackclub.com).**
+**Demo:** [luffy101-hash.github.io/SpeakEMG](https://luffy101-hash.github.io/SpeakEMG/) — interactive EMG simulator + command classifier
 
 ## What is this?
 
-SilentSpeak reads facial and jaw muscle activity through four Grove EMG sensors mounted in headphone earmuffs. When you mouth words without sound, an ESP32-S3 streams 4-channel EMG data to a laptop, a 1D CNN classifies 3-second windows into one of 10 commands, and a companion app displays the result with text-to-speech.
+SpeakEMG reads facial and jaw muscle activity through four Grove EMG sensors mounted in headphone earmuffs. When you mouth words without sound, an ESP32-S3 streams 4-channel EMG data to a laptop, a 1D CNN classifies 3-second windows into one of 10 commands, and a companion app displays the result with text-to-speech.
 
 Inspired by Tang et al., *IEEE TIM* 2025 (arXiv:2504.13921)
-
-## Grant
-
-**Outpost grant request: Phase 1 bench test (~$170).** ESP32-S3, 4x Grove EMG detectors, breadboard, jumpers, and USB cable to validate the 4-channel EMG signal chain on a desk before headphone integration.
-
-See [BOM.csv](BOM.csv) for the full parts list.
 
 ## Features
 
@@ -63,7 +55,7 @@ Static demo lives in [`docs/`](docs/). Enable once in the repo:
 
 **Settings → Pages → Build from branch `main` → folder `/docs`**
 
-Live URL: `https://luffy101-hash.github.io/silent-speak-emg/`
+Live URL: `https://luffy101-hash.github.io/SpeakEMG/`
 
 ### Firmware
 
@@ -83,15 +75,15 @@ streamlit run app/app.py
 ## Repo layout
 
 ```
-SilentSpeak/
+SpeakEMG/
 ├── README.md
 ├── JOURNAL.md
 ├── BOM.csv
-├── firmware/emg_streamer/  
-├── python/                  
-├── app/                       
-├── CAD/           
-└── docs/                      
+├── firmware/emg_streamer/
+├── python/
+├── app/
+├── CAD/
+└── docs/
 ```
 
 ## License

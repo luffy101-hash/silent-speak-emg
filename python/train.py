@@ -89,11 +89,11 @@ def train(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Train SilentSpeak EMGNet")
+    parser = argparse.ArgumentParser(description="Train SpeakEMG EMGNet")
     parser.add_argument("--data-dir", type=Path, default=RAW_DIR)
     parser.add_argument("--epochs", type=int, default=50)
     parser.add_argument("--synthetic", action="store_true", help="Use fake EMG data")
-    parser.add_argument("--out", type=Path, default=MODEL_DIR / "silentspeak.pt")
+    parser.add_argument("--out", type=Path, default=MODEL_DIR / "speahemg.pt")
     args = parser.parse_args()
 
     MODEL_DIR.mkdir(parents=True, exist_ok=True)

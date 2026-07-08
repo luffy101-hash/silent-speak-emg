@@ -1,4 +1,4 @@
-"""Shared constants for SilentSpeak pipeline."""
+"""Shared constants for SpeakEMG pipeline."""
 
 from pathlib import Path
 

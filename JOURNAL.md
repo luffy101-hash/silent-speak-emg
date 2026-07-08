@@ -1,4 +1,4 @@
-# SilentSpeak Journal
+# SpeakEMG Journal
 
 Total time: about 28 hours
 
@@ -6,7 +6,7 @@ Total time: about 28 hours
 
 - 11:40 AM to 1:35 PM
 - found a paper about reading jaw muscles through emg sensors in headphones
-- decided to try something like that for outpost / stardance
+- decided to build a silent-speech EMG interface from the paper
 - looked up grove emg boards and esp32-s3 on seeed and amazon
 
 ## June 22, 2026
@@ -28,7 +28,7 @@ Open, Close, Start, Stop, Yes, No, Next, Back, Okay, Cancel
 
 - 7:20 PM to 9:05 PM
 - checked prices for grove emg detectors and esp32 board
-- wrote BOM.csv with parts list for the grant
+- wrote BOM.csv with parts list
 - figured out gpio pins for the four emg channels
 
 pin map:
@@ -162,7 +162,7 @@ example output:
 epoch 1/10  loss=2.31
 epoch 5/10  loss=1.04
 epoch 10/10 loss=0.42
-saved model to data/models/silentspeak.pt
+saved model to data/models/speahemg.pt
 ```
 
 ## July 2, 2026
@@ -198,7 +198,7 @@ predicted: Yes   (0.65)
 repo layout:
 
 ```
-SilentSpeak/
+SpeakEMG/
   firmware/emg_streamer/
   python/
   app/
